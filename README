@@ -14,6 +14,15 @@ cacti/
   features out of the box.
   http://www.cacti.net/
 
+dbninja/
+  DbNinja MySQL administration tool.  Web-based php
+  tool.  Best of class that I've used.  Makes much
+  more sense than MySQL Workbench.  Using at GCI
+  Network Services, OSS (Sep 4, 2014, started
+  on October 7, 2013).  All the critical databases are
+  MySQL.
+  http://www.dbninja.com/
+
 links.txt
   MySQL related links
 
