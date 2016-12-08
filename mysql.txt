@@ -1,0 +1,66 @@
+mysql.txt
+Created Sat Mar  9 10:40:08 AKST 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+MySQL (pron.: "My S-Q-L",[4] officially, but also called "My Sequel") is (as
+of 2008) the world's most used[5][6] open source relational database
+management system (RDBMS)[7] that runs as a server providing multi-user access
+to a number of databases.
+
+It is named after co-founder Michael Widenius' daughter, My.[8]  The SQL
+phrase stands for Structured Query Language.[4]
+
+The MySQL development project has made its source code available under the
+terms of the GNU General Public License, as well as under a variety of
+proprietary agreements.  MySQL was owned and sponsored by a single for-profit
+firm, the Swedish company MySQL AB, now owned by Oracle Corporation.[9]
+
+wikipedia.org/
+
+
+Thu Apr  2 15:17:35 AKDT 2015
+=============================
+So far I've tried MySQL Workbench, which never seemed to work properly, phpMyAdmin
+which I found a bit slow, and Navicat which is a windows port and runs under wine,
+but none of these is perfect.  In an ideal world, I'm looking for something like a
+native version of navicat.[1]
+
+
+
+Links
+=====
+[1] MySQL GUI Tools
+Does anyone have any good ideas as to native MySQL GUI clients for Ubuntu?
+http://askubuntu.com/questions/8155/mysql-gui-tools
+
+[4] "What is MySQL?". MySQL 5.1 Reference Manual. Oracle. Retrieved 17 September 2012.
+"The official way to pronounce "MySQL" is "My Ess Que Ell" (not "my sequel")"
+http://dev.mysql.com/doc/refman/5.1/en/what-is-mysql.html
+
+[5] "Market Share". Why MySQL?. Oracle. Retrieved 17 September 2012.
+http://www.mysql.com/why-mysql/marketshare/
+
+[6] "DB-Engines Ranking". Retrieved 26 February 2013.
+http://db-engines.com/en/ranking
+
+[7]  Schumacher, Robin; Lentz, Arjen. "Dispelling the Myths".
+MySQL AB. Archived from the original on 6 June 2011.
+Retrieved 17 September 2012.
+http://web.archive.org/web/20110606013619/http://dev.mysql.com/tech-resources/articles/dispelling-the-myths.html
+http://dev.mysql.com/tech-resources/articles/dispelling-the-myths.html
+
+[8] "History of MySQL". MySQL 5.1 Reference Manual. MySQL AB.
+Retrieved 26 August 2011.
+http://dev.mysql.com/doc/refman/5.1/en/history.html
+
+[9] "Sun Microsystems Announces Completion of MySQL Acquisition; Paves Way for Secure,
+Open Source Platform to Power the Network Economy" (Press release). Sun Microsystems.
+26 February 2008. Archived from the original on 28 February 2008.
+Retrieved 17 September 2012.
+http://web.archive.org/web/20080228025123/http://www.sun.com/aboutsun/pr/2008-02/sunflash.20080226.1.xml
+http://www.sun.com/aboutsun/pr/2008-02/sunflash.20080226.1.xml
+
+MySQL
+From Wikipedia, the free encyclopedia
+http://en.wikipedia.org/wiki/MySQL
