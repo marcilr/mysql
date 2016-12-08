@@ -7,3 +7,19 @@ Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
 +++ Thu Dec  8 11:15:57 AKST 2016 - Updated appropriate links with:
 MySQL Date and Time functions
 http://www.w3resource.com/mysql/date-and-time-functions/date-and-time-functions.php
+
++++ Thu Dec  8 11:15:57 AKST 2016 - Update docs with great query for last
+day, week, year, etc.:
+
+Last day:
+  select count(*) from evenge.events
+  where dtEvent >= DATE_SUB(NOW(),INTERVAL 24 hour);
+    194,985
+
+Last week:
+  select count(*) from evenge.events
+  where dtEvent >= DATE_SUB(NOW(),INTERVAL 7 day);
+    773,314
+
+Date and Time Functions
+http://dev.mysql.com/doc/refman/5.7/en/date-and-time-functions.html#function_current-time
