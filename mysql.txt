@@ -3,6 +3,10 @@ Created Sat Mar  9 10:40:08 AKST 2013
 Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
 
 
+MySQL
+The world's most popular open source database
+
+
 MySQL (pron.: "My S-Q-L",[4] officially, but also called "My Sequel") is (as
 of 2008) the world's most used[5][6] open source relational database
 management system (RDBMS)[7] that runs as a server providing multi-user access
