@@ -1,0 +1,93 @@
+links.txt
+Created Sat Mar  9 10:45:31 AKST 2013
+Copyright (C) 2013 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+MySQL related links
+
+
+Links
+=====
+Administer MySQL Like a DbNinja
+by Craig Buckler
+Published October 29, 2012
+http://www.sitepoint.com/dbninja-mysql-client/
+
+DbNinja for MySQL
+DbNinja is an advanced web-based application for MySQL database administration
+and development.  It's a must-have for those who wish to access their hosted
+servers remotely.  DbNinja supports all the latest features including:
+triggers, events, views, stored routines and foreign keys; in addition it
+allows to import and backup data and MySQL object structures, manage users and
+much more.  DbNinja has a highly functional and elegant user interface, and
+can be used securely in any modern browser on any OS.
+http://www.dbninja.com/
+
+Eclipse SQL Explorer is a thin SQL client that allows you to query and browse
+any JDBC compliant database.  It supports plugins with specialized
+functionality for individual databases (Oracle, DB2 and MySQL) and can be
+extended to include specialized support for other databases.
+http://eclipsesql.sourceforge.net/index.php
+
+MCA FAQ
+MariaDB Contributor Agreement (MCA) Frequently Asked Questions
+"requiring copyright assignment"
+Very, interesting license stuff I wondered about previously.
+Details here.
+https://mariadb.com/kb/en/mca-faq/
+
+MONyog MySQL Monitor
+MONyog is a "MySQL DBA in a box" that helps MySQL DBAs manage more MySQL
+servers, tune their MySQL servers and fix problems with MySQL database
+applications.
+https://www.webyog.com/
+
+MySQL
+From Wikipedia, the free encyclopedia
+http://en.wikipedia.org/wiki/MySQL
+
+MySQL :: The world's most popular open source database
+http://www.mysql.com/
+
+MySQL 5.5 Reference Manual
+Including MySQL Cluster NDB 7.2 Reference Guide
+http://dev.mysql.com/doc/refman/5.5/en/
+
+MySQL GUI Tools
+So far I've tried MySQL Workbench, which never seemed to work properly,
+phpMyAdmin which I found a bit slow, and Navicat which is a windows port
+and runs under wine, but none of these is perfect.  In an ideal world,
+I'm looking for something like a native version of navicat.
+http://askubuntu.com/questions/8155/mysql-gui-tools
+
+MySQL whitepapers
+https://www.mysql.com/why-mysql/
+
+SQLyog MySQL GUI
+SQLyog is the most powerful MySQL manager and admin tool, combining the
+features of MySQL Administrator, phpMyAdmin and other MySQL Front Ends and
+MySQL GUI tools.
+https://www.webyog.com/
+
+tutorialspoint TP simply easy learning
+Solid MySQL syntax docs - Mirror?
+http://www.tutorialspoint.com/mysql/
+
+Will Facebook, Twitter, LinkedIn Stay With MySQL?
+Posted by timothy on Sunday September 22, 2013 @05:17PM
+from the so-long-as-it's-internet-scale dept.
+"The world's largest web-scale users of MySQL have committed to one further
+upgrade to the Oracle-controlled database — but Facebook and Twitter are also
+eyeing off more open options from MariaDB and cheaper options from the NoSQL
+community.  Who will pay for MySQL enterprise licenses into the future?"
+"Re:and so meanwhile... (Score:5, Insightful)
+by greg1104 (461138) <gsmith@gregsmith.com> on
+Sunday September 22, 2013 @08:30PM (#44920693) Homepage
+As long as MariaDB is requiring copyright assignment [mariadb.com], there's
+every reason to believe it will be sold off again the same way MySQL was.
+The FSF gets away with that for GNU projects because they've never abused
+contributor trust before.  Monty is no FSF, and there's no reason believe
+MariaDB will remain outside of commercial control any better than MySQL did.
+I can't believe people are falling for the same trick again."
+http://developers.slashdot.org/story/13/09/22/2116237/will-facebook-twitter-linkedin-stay-with-mysql
+
