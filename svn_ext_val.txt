@@ -1,0 +1,71 @@
+#
+# svn_ext_val.txt
+# Created Wed Nov 13 14:30:55 AKST 2013
+# by Raymond E. Marcil <marcilr@gmail.com>
+#
+
+#
+# List of repo hierarchical directories to checkout under mysql/
+#
+# cacti/                  Cacti is a complete network graphing solution
+#                         designed to harness the power of RRDTool's data
+#                         storage and graphing functionality.  Cacti provides
+#                         a fast poller, advanced graph templating, multiple
+#                         data acquisition methods, and user management
+#                         features out of the box.
+#                         http://www.cacti.net/
+#
+# dbninja/                DbNinja MySQL administration tool.  Web-based php
+#                         tool.  Best of class that I've used.  Makes much
+#                         more sense than MySQL Workbench.  Using at GCI
+#                         Network Services, OSS (Sep 4, 2014, started
+#                         on October 7, 2013).  All the critical databases are
+#                         MySQL.
+#                         http://www.dbninja.com/
+#
+# docs/                   Documentation
+#
+# eclipse-sql-explorer/   Eclipse SQL Explorer
+#                         http://eclipsesql.sourceforge.net/index.php
+#
+# navicat/                Navicat fo MySQL (Linux) - gui client that
+#                         Whit Reeve at GCI Nework Services, OSS likes.
+#                         No native linux client.
+#                         http://navicat.com/store/navicat-for-mysql
+#
+# pdf/                    Portable Document Format files
+#
+# phpmyadmin/             Web-based database administration tool. 
+#                         phpMyAdmin is a free software tool written in PHP,
+#                         intended to handle the administration of MySQL over
+#                         the Web.  phpMyAdmin supports a wide range of
+#                         operations on MySQL, MariaDB and Drizzle.  Frequently
+#                         used operations (managing databases, tables, columns,
+#                         relations, indexes, users, permissions, etc) can be
+#                         performed via the user interface, while you still
+#                         have the ability to directly execute any SQL
+#                         statement.  Installed since I read it has a nice
+#                         database search feature.  However, not operation as
+#                         I discovered that phpmyadmin requires it's own
+#                         database.
+#                         http://www.phpmyadmin.net/home_page/index.php
+#
+# syntax/                 Syntax
+#
+# valentina-studio/       Valentina Studio is the best way to transform your
+#                         data into meaningful information; create, administer,
+#                         query and explore Valentina DB, MySQL, Postgre and
+#                         SQLite databases for free on 32/64 bit Windows,
+#                         Linux and Mac OS X.
+#                         Valentina Studio Pro is $199 (September 2014)
+#                         http://www.valentina-db.com/en/valentina-studio-overview
+# 
+../../mysql/cacti/cacti                                 ./cacti
+../../mysql/dbninja/dbninja                             ./dbninja
+../../mysql/docs/docs                                   ./docs
+../../mysql/eclipse-sql-explorer/eclipse-sql-explorer   ./eclipse-sql-explorer/
+../../mysql/navicat/navicat                             ./navicat
+../../mysql/pdf/pdf                                     ./pdf
+../../mysql/phpmyadmin/phpmyadmin                       ./phpmyadmin
+../../mysql/syntax/syntax                               ./syntax
+../../mysql/valentina-studio/valentina-studio           ./valentina-studio
