@@ -5,6 +5,15 @@ Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
 
 Filelist
 ========
+cacti/
+  Cacti is a complete network graphing solution
+  designed to harness the power of RRDTool's data
+  storage and graphing functionality.  Cacti provides
+  a fast poller, advanced graph templating, multiple
+  data acquisition methods, and user management
+  features out of the box.
+  http://www.cacti.net/
+
 links.txt
   MySQL related links
 
