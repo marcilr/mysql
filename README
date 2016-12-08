@@ -1,0 +1,18 @@
+README
+Created Thu Dec  8 11:07:03 AKST 2016
+Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Filelist
+========
+links.txt
+  MySQL related links
+
+mysql.txt
+  MySQL
+  The world's most popular open source database
+  http://www.mysql.com/
+
+svn_ext_val.txt
+  List of repo hierarchical directories to checkout under mysql/
+
