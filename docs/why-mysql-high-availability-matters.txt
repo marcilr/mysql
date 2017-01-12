@@ -1,0 +1,87 @@
+why-mysql-high-availability-matters.txt
+Created Thu Jan 12 08:10:07 AKST 2017
+Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+
+Thank you for registering for Why MySQL High Availability Matters. 
+LIVE WEBCAST DATE:  January 12, 2017 
+LIVE WEBCAST TIME:  09:00 AM PST (8:00AM to 9:00AM Alaska time)
+
+Use the link below to enter the webcast up to 15 minutes before the start. 
+WEBCAST LINK:  http://event.on24.com/wcc/r/1337360/5CBC3BBBBA8D437454F957B0FBEEE05B EMAIL:   
+
+SYSTEM TEST:  Test your computer to make sure you meet the minimum technical requirements. 
+Test Your System: http://event.on24.com/utils/test/testYourSystem.html?eventid=1337360&sessionid=1&key=5CBC3BBBBA8D437454F957B0FBEEE05B&checkBrowser=true&checkOS=true&checkBandwidth=true&checkCookie=true&ngwebcast=true&ngwebcast=true 
+Thank you and enjoy the webcast!
+
+
+Thu Jan 12 08:10:07 AKST 2017
+=============================
+Why MySQL High Availability Matters
+
+Matt Lord
+MySQL Senior Product Manager
+Oracle
+
+MySQL high availability matters because your data matters.
+If your database goes down, whether due to human error, catastrophic network
+failure, or planned maintenance, the accessibility and accuracy of your data
+can be compromised with disastrous results. Join Matt Lord, MySQL’s High
+Availability Product Manager as he examines the critical elements of a high
+availability solution, including:
+o Data redundancy
+o Data consistency
+o Automatic fault detection and resolution
+o No single point of failure
+  and how you can achieve them more easily than ever before using MySQL’s new
+  native HA solution.
+
+
+
+o MySQL Group Library for MySQL 5.7 or later
+  - Highly available distributed MySQL database service.
+  - Do rolling maintenance operations.
+  - Sharding is a type of database partitioning that separates very large databases
+    the into smaller, faster, more easily managed parts called data shards.  The word
+    shard means a small part of a whole.
+    http://searchcloudcomputing.techtarget.com/definition/sharding
+  - Alternatice to master/slave replication
+  - Better performance than similar offerings
+  - Easy monitoring
+  - Baked in part of MySQL
+  - Available on all platforms
+  - Does have some performance impact.  Relatively minor.
+  - 3, 5, 7 machines per group.  Odd number to reach concensus on decisions.
+  - Beefy machines: 32-64 vCPUs, fast CPU 2.5GHz+, SSDs
+  - MySQL Group Replication
+  - Sharded MySQL Group Replication clusters (working on it)
+  - Looks sweet
+
+ 
+Found in GCI NIT workstation the bottom front jacks do not work.
+The center jack on the mobo audio parts works fine.
+
+Checked out:
+  alsamixer - shows sound enabled:
+   Card: PulseAudio
+   Chip: PulseAudio
+   View: F3:[Playback] F4: Capture  F5: All
+   Item: Master
+
+   Shows: alsa 3.16
+
+  Looks good.
+
+
+
+
+Filelist
+========
+http://event.lvl3.on24.com/event/13/37/36/0/rt/1/documents/resourceList1484212861579/why_mysql_high_availability_matters.pdf
+
+
+Links
+=====
+PulseAudio
+https://wiki.debian.org/PulseAudio
