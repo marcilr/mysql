@@ -34,7 +34,7 @@ o Data redundancy
 o Data consistency
 o Automatic fault detection and resolution
 o No single point of failure
-  and how you can achieve them more easily than ever before using MySQL’s new
+  and how you can achieve them more easily than ever before using MySQL's new
   native HA solution.
 
 
