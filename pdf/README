@@ -5,6 +5,13 @@ Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
 
 Filelist
 ========
+alwaysonwithoutfailmysqlgroupreplicationfinal.pdf
+  Always On, Without Fail: MySQL Group ReplicaIon	
+  Luis Soares (luis.soares@oracle.com)
+  Principal  Sofware Engineer, MySQL Replication Lead	
+  From GCI NIT presentation on Thu Jan 17, 2017 8:00AM to 9:30AM
+  webinar.
+
 why_mysql_high_availability_matters.pdf
   Why Mysql High Availability Matters
   Matt Lord
@@ -12,5 +19,5 @@ why_mysql_high_availability_matters.pdf
   @mattalord
   Oracle
   From GCI NIT presentation on Thu Jan 12, 2017 8:00AM to 9:00AM
-  web conference.
+  webinar.
 
