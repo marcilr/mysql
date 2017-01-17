@@ -7,8 +7,17 @@ Filelist
 ========
 always-on-without-fail-mysql-group-replication.txt
   GCI NIT web conference notes from:
+
   Always On, Without Fail: MySQL Group Replication.
-  Live webcast date: January 17, 2017 8:00AM - 9:00AM
+  Title:    Always On, Without Fail: MySQL Group Replication
+  Date:     Tuesday, January 17, 2017
+  Time:     09:00 AM Pacific Standard Time (8:00AM - 9:30AM AKST)
+  Duration: 1 hour, 30 minutes
+  Speaker:  Luis Soares
+            MySQL Principal Software Engineer
+            Oracle
+
+  Live webcast date: January 17, 2017 8:00AM - 9:30AM AKST
 
 why-mysql-high-availability-matters.txt
   GCI NIT web conference notes from:
