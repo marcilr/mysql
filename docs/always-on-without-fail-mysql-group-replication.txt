@@ -1,0 +1,41 @@
+always-on-without-fail-mysql-group-replication.txt
+Created Tue Jan 17 05:28:12 AKST 2017
+Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Title:    Always On, Without Fail: MySQL Group Replication
+Date:     Tuesday, January 17, 2017
+Time:     09:00 AM Pacific Standard Time (8:00AM - 9:30AM AKST)
+Duration: 1 hour, 30 minutes
+Speaker:  Luis Soares
+          MySQL Principal Software Engineer
+          Oracle
+
+MySQL Group Replication is Oracle's new multimaster, update-everywhere replication solution that
+helps keep your MySQL databases highly available and your business up and running, without fail.
+It's a MySQL plugin that combines distributed systems technologies with database replication into
+a highly resilient HA solution.  At its core is a group communication service providing reliable
+message passing among a group of MySQL servers. This enables automatic and consistent
+coordination among all the participants in a group.  Such automatic orchestration of MySQL
+servers results in a fault-tolerant replicated state machine providing a highly available MySQL
+data store.
+
+Join Group Replication Architect, Luis Soares, in this technical webinar to get the details behind
+MySQL Group Replication, as well as practical advice on how to set it up, maintain it and power
+your business with it.
+
+
+
+Thank you for registering for Always On, Without Fail: MySQL Group Replication. 
+LIVE WEBCAST DATE:  January 17, 2017 
+LIVE WEBCAST TIME:  09:00 AM PST 
+
+Use the link below to enter the webcast up to 15 minutes before the start. 
+
+WEBCAST LINK:  http://event.on24.com/wcc/r/1336788/D5C1D6655A45F2BD025F07DEE588BC66 EMAIL:   
+
+SYSTEM TEST:  Test your computer to make sure you meet the minimum technical requirements. 
+
+Test Your System: http://event.on24.com/utils/test/testYourSystem.html?eventid=1336788&sessionid=1&key=D5C1D6655A45F2BD025F07DEE588BC66&checkBrowser=true&checkOS=true&checkBandwidth=true&checkCookie=true&ngwebcast=true&ngwebcast=true 
+
+Thank you and enjoy the webcast!
