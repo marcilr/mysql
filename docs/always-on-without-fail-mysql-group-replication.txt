@@ -24,6 +24,12 @@ Join Group Replication Architect, Luis Soares, in this technical webinar to get 
 MySQL Group Replication, as well as practical advice on how to set it up, maintain it and power
 your business with it.
 
+Luis Soares is a Principal Software Engineer and the MySQL Replication Team lead at Oracle.  His
+research interests include replication technologies, dependable systems and high availability.
+Before joining the MySQL team, he was both a post-graduate student and a researcher at the
+University of Minho, Portugal, where he designed and implemented group-based replication
+protocols. Before that, he worked for a Portuguese multi-national company as a system analyst.
+
 
 
 Thank you for registering for Always On, Without Fail: MySQL Group Replication. 
@@ -39,3 +45,35 @@ SYSTEM TEST:  Test your computer to make sure you meet the minimum technical req
 Test Your System: http://event.on24.com/utils/test/testYourSystem.html?eventid=1336788&sessionid=1&key=D5C1D6655A45F2BD025F07DEE588BC66&checkBrowser=true&checkOS=true&checkBandwidth=true&checkCookie=true&ngwebcast=true&ngwebcast=true 
 
 Thank you and enjoy the webcast!
+
+
+
+Tue Jan 17 08:00:22 AKST 2017
+=============================
+Always On, Without Fail: MySQL Group ReplicaIon       
+Luis Soares (luis.soares@oracle.com)
+Principal  Sofware Engineer, MySQL Replication Lead   
+
+GR - Group Replication plugin
+
+MySQL Plugin	
+ Regular MySQL Plugin. Nothing new.	
+
+MySQL InnoDB	
+  Us InnoDB as normally you would. Nothing new.	
+  Transparent optimizations in InnoDB to better support Group Replication.	
+
+MySQL Performance Schema
+  Monitor Group ReplicaIon using regular Performance Schema tables. Nothing new.	
+
+
+Where to go from here?	
+
+Packages	
+  http://www.mysql.com/downloads/	
+
+Documentation	
+  http://dev.mysql.com/doc/refman/5.7/en/group-replicaIon.html	
+
+Blogs from the Engineers (news, technical informaIon, and much more)	
+  http://mysqlhighavailability.com	
