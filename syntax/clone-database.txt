@@ -1,0 +1,38 @@
+clone-database.txt
+Created Mon Jan 16 16:25:55 AKST 2017
+Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Clone database
+
+
+$ mysqldump yourFirstDatabase -u user -ppassword > yourDatabase.sql
+$ mysql yourSecondDatabase -u user -ppassword < yourDatabase.sql
+-- edited Oct 8 '12 at 10:37
+   answered Apr 5 '11 at 11:53
+   user647772
+
+It should be noted that this does not create the new Database.
+You first need to create the new Database (in this example
+'yourSecondDatabase' ) and then run the above commands.
+– Kevin Bradshaw Jan 2 '13 at 10:31
+--stackoverflow.com/questions/5551301/clone-mysql-database
+
+
+In case you use phpMyAdmin
+1. Select the database you wish to copy (by clicking on the database from the
+   phpMyAdmin home screen).
+2. Once inside the database, select the Operations tab.
+3. Scroll down to the section where it says "Copy database to:"
+4. Type in the name of the new database.
+5. Select "structure and data" to copy everything.
+6. Check the box "CREATE DATABASE before copying" to create a new database.
+7. Check the box "Add AUTO_INCREMENT value."
+8. Click on the Go button to proceed.
+--stackoverflow.com/questions/5551301/clone-mysql-database
+
+
+Links
+=====
+Clone MySQL database
+http://stackoverflow.com/questions/5551301/clone-mysql-database
