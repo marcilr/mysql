@@ -1,0 +1,12 @@
+links.txt
+Created Mon Jan 16 16:28:07 AKST 2017
+Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Syntax related links
+
+
+Links
+=====
+Clone MySQL database
+http://stackoverflow.com/questions/5551301/clone-mysql-database
