@@ -1,0 +1,22 @@
+books.txt
+Created Wed Jan 25 10:03:52 AKST 2017
+Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Books for MySQL
+
+
+MySQL Cookbook
+Controlling mysql Output Destination and Format, p. 17
+Producing HTML or XML output, p. 18
+HTML table:
+  % mysql -H -e "SELECT * FROM limbs WHERE legs=0" cookbook
+  <TABLE BORDER=1>
+  ...
+  </TABLE>
+XML document instead of html, p. 19:
+  % mysql -X -e "SELECT * FROM limbs WHERE legs=0" cookbook
+  <?xml version="1.0"?>
+  ...
+  </resultset>
+https://books.google.com/books?id=lFsaBAAAQBAJ&pg=PA138&lpg=PA138&dq=mysql+process+piped+output&source=bl&ots=tiJWSIXljJ&sig=6NT252RJydnsRgi4op3mzwdSMz8&hl=en&sa=X&ved=0ahUKEwj6s962gtzRAhVQ4mMKHVr6Aj4Q6AEIUTAI#v=onepage&q=mysql%20process%20piped%20output&f=false
