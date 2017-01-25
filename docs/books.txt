@@ -6,6 +6,14 @@ Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
 Books for MySQL
 
 
+Own: 
+  High Performance MySQL, 3rd Edition
+  Mar 2012 | Peter Zaitsev, Vadim Tkachenko, Baron Schwartz
+
+  MySQL High Availability, 2nd Edition
+  Apr 2014 | Charles Bell, Lars Thalmann, Mats Kindahl
+
+
 MySQL Cookbook
 Controlling mysql Output Destination and Format, p. 17
 Producing HTML or XML output, p. 18
@@ -20,3 +28,4 @@ XML document instead of html, p. 19:
   ...
   </resultset>
 https://books.google.com/books?id=lFsaBAAAQBAJ&pg=PA138&lpg=PA138&dq=mysql+process+piped+output&source=bl&ots=tiJWSIXljJ&sig=6NT252RJydnsRgi4op3mzwdSMz8&hl=en&sa=X&ved=0ahUKEwj6s962gtzRAhVQ4mMKHVr6Aj4Q6AEIUTAI#v=onepage&q=mysql%20process%20piped%20output&f=false
+
