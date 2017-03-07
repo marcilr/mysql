@@ -1,0 +1,69 @@
+queries.txt
+Created Tue Mar  7 08:16:12 AKST 2017
+Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Queries at GCI Network Integration Team
+
+
+Generator related queries
+=========================
+select * from jobs
+where runPolicy != 'never';
+
+select idJob,jobName,neName,transferType,host,srcFilePath,destFilePath
+from jobs
+where runPolicy != 'never';
+
+
+SELECT dtEvent, dtEventCleared, resourceName, subresourceName
+FROM evenge.events
+WHERE subresourceName like '%RUN%' AND dtEvent >= NOW() - INTERVAL 5 YEAR
+AND resourceName like '%barrow%' limit 10;
+
+
+SELECT dtEvent, dtEventCleared, resourceName, subresourceName
+FROM evenge.events
+WHERE subresourceName like '%RUN%'  AND dtEvent >= NOW() - INTERVAL 1 MONTH
+AND (resourceName='kenaislr-backup_generator-1'
+OR resourceName='fdc-generator-2'
+OR resourceName='homerstore-backup_gen-1'
+OR resourceName='soldotnaslr-backup_generator-1'
+OR resourceName='barrow_es-generator-1'
+OR resourceName='wasilladc-backup_gen-1');
+
+
+SELECT dtEvent, dtEventCleared, resourceName, subresourceName
+FROM evenge.events
+WHERE subresourceName like '%RUN%'  AND dtEvent >= MONTH(CURRENT_DATE - INTERVAL 1 MONTH)
+AND (resourceName='kenaislr-backup_generator-1'
+OR resourceName='fdc-generator-2'
+OR resourceName='homerstore-backup_gen-1'
+OR resourceName='soldotnaslr-backup_generator-1'
+OR resourceName='barrow_es-generator-1'
+OR resourceName='wasilladc-backup_gen-1')
+ORDER BY dtEvent DESC;
+
+
+SELECT dtEvent, dtEventCleared, resourceName, subresourceName
+FROM evenge.events
+WHERE subresourceName like '%RUN%'  AND dtEvent >= NOW() - INTERVAL 1 MONTH
+AND (resourceName='kenaislr-backup_generator-1'
+OR resourceName='fdc-generator-2'
+OR resourceName='homerstore-backup_gen-1'
+OR resourceName='soldotnaslr-backup_generator-1'
+OR resourceName='barrow_es-generator-1'
+OR resourceName='wasilladc-backup_gen-1')
+ORDER BY dtEvent DESC;
+
+
+SELECT dtEvent, dtEventCleared, resourceName, subresourceName
+FROM evenge.events
+WHERE subresourceName like '%RUN%'  AND dtEvent >= NOW() - INTERVAL 1 YEAR
+AND (resourceName like 'bethel%gen%'
+OR resourceName like 'jdc%gen%'
+OR resourceName like 'kod%gen%'
+OR resourceName like 'ket%gen%'
+OR resourceName like 'mcg%gen%'
+OR resourceName like 'sit%gen%'
+OR resourceName like 'whi%gen%');
