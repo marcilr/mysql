@@ -14,5 +14,12 @@ links.txt
 queries.txt
   Queries at GCI Network Integration Team
 
+run-query-from-command-line.txt
+  Run query from command line
+    $ mysql -u <user> -p -e "select * from schema.table"
+
+  How do you run a single query through mysql from the command line?
+  https://stackoverflow.com/questions/1602904/how-do-you-run-a-single-query-through-mysql-from-the-command-line
+
 syntax.txt
   Syntax
