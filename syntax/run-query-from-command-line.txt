@@ -1,0 +1,16 @@
+run-query-from-command-line.txt
+Created Mon Jul  3 09:16:54 AKDT 2017
+Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Run query from command line
+
+
+$ mysql -u <user> -p -e "select * from schema.table"
+
+
+
+Links
+=====
+How do you run a single query through mysql from the command line?
+https://stackoverflow.com/questions/1602904/how-do-you-run-a-single-query-through-mysql-from-the-command-line
