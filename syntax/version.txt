@@ -1,0 +1,23 @@
+version.txt
+Created Fri Aug 18 13:25:27 AKDT 2017
+Copyright (C) 2017 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Get mysql version
+
+
+In DbVisualizer:
+
+
+show variables like '%version%';
+
+
+Variable_name             Value
+-----------------------------------------------------------------------
+innodb_version            5.6.24-72.2
+protocol_version          10
+slave_type_conversions    <blank>	
+version	                  5.6.24-72.2-log 
+version_comment	Percona   Server (GPL), Release 72.2, Revision 8d0f85b
+version_compile_machine   x86_64
+version_compile_os        Linux
