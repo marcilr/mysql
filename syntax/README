@@ -23,3 +23,7 @@ run-query-from-command-line.txt
 
 syntax.txt
   Syntax
+
+version.txt
+  Get mysql version
+
