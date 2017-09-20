@@ -10,3 +10,12 @@ Links
 =====
 Clone MySQL database
 http://stackoverflow.com/questions/5551301/clone-mysql-database
+
+MySql Select, MANY FIELDS, how best to display in terminal?
+Try enabling vertical mode, using \G to execute the query instead of ;:
+  mysql> SELECT * FROM sometable \G
+Your results will be listed in the vertical mode, so each column value
+will be printed on a separate line.  The output will be narrower but
+obviously much longer.
+https://stackoverflow.com/questions/924729/mysql-select-many-fields-how-best-to-display-in-terminal
+
