@@ -1,0 +1,30 @@
+sequel-pro.txt
+Created Fri Jan 26 09:03:13 AKST 2018
+Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Sequel Pro
+
+
+Sequel Pro is a fast, easy-to-use Mac database management
+application for working with MySQL databases.
+
+Sequel Pro gives you direct access to your MySQL Databases
+on local and remote servers.
+
+
+
+Recommended during GCU NIT (Network Integration Team)  
+meeting Monday January 22, 2018 for use on MacBook Pro.
+
+
+Links
+=====
+Install MySQL on Mac OS X
+https://sequelpro.com/docs/ref/mysql/install-on-osx
+
+Getting Connected
+https://sequelpro.com/docs/get-started/get-connected
+
+Sequel Pro
+http://www.sequelpro.com/
