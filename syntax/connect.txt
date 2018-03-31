@@ -1,0 +1,67 @@
+connect.txt
+Created Sat Mar 31 13:56:53 AKDT 2018
+Copyright (C) 2018 by Raymond E. Marcil <marcilr@gmail.com>
+
+
+Connect to database
+
+
+mysql -u USERNAME -pPASSWORD -h HOSTNAMEORIP DATABASENAME
+ 
+The options above means:
+  -u: username
+  -p: password (**no space between -p and the password text**)
+  -h: host
+
+last one is name of the database that you wanted to connect. 
+Look into the the link, it's detailed there![1]
+
+
+Examples
+========
+To sadc-cdr-mysql1:
+
+$ mysql -uroot -p*** -h sadc-cdr-mysql1.operations.gci.com filexfer
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 5213688
+Server version: 5.6.24-72.2-log Percona Server (GPL), Release 72.2, \
+Revision 8d0f85b
+
+Copyright (c) 2000, 2017, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [filexfer]> quit
+Bye
+$
+
+
+To osstest-db-provisioning:
+
+$ mysql -uroot -p*** -h osstest-db-provisioning.operations.gci.com filexfer
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 71195605
+Server version: 5.5.32-31.0-log Percona Server (GPL), Release rel31.0, Revision 549
+
+Copyright (c) 2000, 2017, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [filexfer]> quit
+Bye
+$
+
+
+Links
+=====
+[1] connecting to MySQL from the command line
+https://stackoverflow.com/questions/5131931/connecting-to-mysql-from-the-command-line
+
+Connecting to the MySQL Server
+https://dev.mysql.com/doc/refman/5.7/en/connecting.html
