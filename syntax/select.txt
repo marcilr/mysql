@@ -1,0 +1,34 @@
+select.txt
+Created Tue Jul 24 15:13:23 AKDT 2018
+by Raymond E. Marcil <rmarcil@gci.com>
+
+
+Select
+
+
+Get all distinct idJobs values for all jobs:
+  select distinct idJob from filexfer.jobs;
+
+Get count of all distinct jobs:
+  select count(distinct idJob) from filexfer.jobs;
+  894
+
+Select all jobs that have a monitor row configured:
+  select jobs.idJob from filexfer2.jobs, filexfer2.monitors
+  where filexfer2.jobs.idJob=filexfer2.monitors.idJob;
+
+Get count of distinct jobs that  have a monitoring row configured:
+  select count(distinct jobs.idJob) from filexfer2.jobs, filexfer2.monitors
+  where filexfer2.jobs.idJob=filexfer2.monitors.idJob;
+  192
+
+Select all jobs that *do not* have a monitoring row configured:
+  select distinct jobs.idJob from filexfer2.jobs, filexfer2.monitors
+  where filexfer2.jobs.idJob!=filexfer2.monitors.idJob;
+
+Get count of disinct jobs that *do not* have a monitoring row configured:
+  select count(distinct jobs.idJob) from filexfer2.jobs, filexfer2.monitors
+  where filexfer2.jobs.idJob!=filexfer2.monitors.idJob;
+  549
+
+192 + 549 = 741 (short 894 - 741 = 153 jobs) 
