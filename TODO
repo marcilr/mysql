@@ -4,6 +4,14 @@ Copyright (C) 2016 by Raymond E. Marcil <marcilr@gmail.com>
 
 
 
++++ Thu Mar  8 09:28:50 AKST 2018 - Check out these technologies:
+  o Docker
+  o Kubernetes
+  o Openshift
+  o Mesos
+
+  Spotted whilst doing a Percona survey March 8, 2016.
+
 +++ Thu Dec  8 11:15:57 AKST 2016 - Updated appropriate links with:
 MySQL Date and Time functions
 http://www.w3resource.com/mysql/date-and-time-functions/date-and-time-functions.php
