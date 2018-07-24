@@ -1,0 +1,28 @@
+insert.txt
+Created Tue Jul 24 11:45:44 AKDT 2018
+by Raymond E. Marcil <rmarcil@gci.com>
+
+
+Insert
+
+
+Two forms of insert statement:
+
+The first way specifies both the column names and the values to be inserted:
+  INSERT INTO table_name (column1, column2, column3, ...)
+  VALUES (value1, value2, value3, ...);
+
+If you are adding values for all the columns of the table, you do not need
+to specify the column names in the SQL query.  However, make sure the order
+of the values is in the same order as the columns in the table.  The INSERT
+INTO syntax would be as follows:
+  INSERT INTO table_name
+  VALUES (value1, value2, value3, ...);
+
+--www.w3schools.com/sql/sql_insert.asp
+
+
+Links
+=====
+SQL INSERT INTO Statement
+https://www.w3schools.com/sql/sql_insert.asp
