@@ -1,0 +1,37 @@
+insert-into-select.txt
+Created Tue Jul 24 11:52:11 AKDT 2018
+by Raymond E. Marcil <rmarcil@gci.com>
+
+
+The SQL INSERT INTO SELECT Statement
+
+The INSERT INTO SELECT statement copies data from
+one table and inserts it into another table.
+
+o INSERT INTO SELECT requires that data types in source
+  and target tables match
+
+o The existing records in the target table are unaffected
+
+
+INSERT INTO SELECT Syntax
+=========================
+Copy all columns from one table to another table:
+
+  INSERT INTO table2
+  SELECT * FROM table1
+  WHERE condition;
+  Copy only some columns from one table into another table:
+
+  INSERT INTO table2 (column1, column2, column3, ...)
+  SELECT column1, column2, column3, ...
+  FROM table1
+  WHERE condition;
+
+--www.w3schools.com/sql/sql_insert_into_select.asp
+
+
+Links
+=====
+SQL INSERT INTO SELECT Statement
+https://www.w3schools.com/sql/sql_insert_into_select.asp
