@@ -3,8 +3,11 @@ Created Tue Jul 24 11:52:11 AKDT 2018
 by Raymond E. Marcil <rmarcil@gci.com>
 
 
-The SQL INSERT INTO SELECT Statement
+INSERT INTO SELECT
 
+
+The SQL INSERT INTO SELECT Statement
+====================================
 The INSERT INTO SELECT statement copies data from
 one table and inserts it into another table.
 
@@ -29,6 +32,104 @@ Copy all columns from one table to another table:
   WHERE condition;
 
 --www.w3schools.com/sql/sql_insert_into_select.asp
+
+Need to get list of jobs that do not have a monitor already.
+  select idJob from monitors;
+
+
+
+INSERT INTO filexfer2.monitors (
+  idJob,
+  monitorName,
+  severity,
+  sqlTemplate,
+  messageTemplete, enabled, emailSubjectTemplate,
+  emailMessageTemplate, emailRecipients,
+  emailEnabled)
+VALUES
+  ((SELECT idJob from filexfer2.jobs),
+   (SELECT CONCAT(jobName," - Data Latency")),
+   3,
+   "SELECT MAX( `dtTransferStart` ) < NOW() - INTERVAL 3 HOUR AS `result`, MAX( `dtTrans$
+   "Data latency detected. Last file transferred at [% lastxfer %].",
+   "no",
+   (SELECT CONCAT(jobName," - Data Latency")),
+   "Data latency detected. Last file transferred at [% lastxfer %].",
+   "ccresap@gci.com,rmarcil@gci.com",
+   "yes");
+WHERE idJob=196;
+
+
+INSERT INTO filexfer2.monitors (
+  idJob,
+  monitorName,
+  severity,
+  sqlTemplate,
+  messageTemplete, enabled, emailSubjectTemplate,
+  emailMessageTemplate, emailRecipients,
+  emailEnabled)
+VALUES
+  ((SELECT idJob from filexfer2.jobs),
+   (SELECT CONCAT(jobName," - Data Latency")),
+   3,
+   "SELECT MAX( `dtTransferStart` ) < NOW() - INTERVAL 3 HOUR AS `result`, MAX( `dtTransferStart` ) AS `lastXfer` FROM `filexfer2`.`logs` WHERE `idJob` =  [% monitor.idJob %]",
+   "Data latency detected. Last file transferred at [% lastxfer %].",
+   "no",
+   (SELECT CONCAT(jobName," - Data Latency")),
+   "Data latency detected. Last file transferred at [% lastxfer %].",
+   "ccresap@gci.com,rmarcil@gci.com",
+   "yes");
+WHERE idJob=196;   <=== Test row to insert
+ 
+   
+SELECT idJob,
+FROM filexfer2.jobs
+WHERE  runPolicy != 'never';
+
+
+  idJob not in monitors already
+
+
+Examples
+========
+Get monitors data:
+  select * from monitors;
+
+Columns:
+  idMonitor:      sequencial key
+  idJob:          syncs to idJob in jobs table
+  monitorName:    jobName + " - Data Latency" 
+  resourceName:   (null)
+  severity:       3  (the default)
+
+  sqlTemplate:
+    SELECT 
+      MAX( `dtTransferStart` ) < NOW() - INTERVAL 3 HOUR AS `result`,
+      MAX( `dtTransferStart` ) AS `lastXfer`
+    FROM `filexfer2`.`logs`
+    WHERE `idJob` =  [% monitor.idJob %]
+
+  messageTemplate:
+    Data latency detected. Last file transferred at [% lastxfer %].    
+
+  enabled: yes
+
+  emailSubjectTemplate:
+    jobName + ' - Data Latency'
+
+  emailMessageTemplate:
+    Data latency detected. Last file transferred at [% lastxfer %].
+
+  emailRecipients:
+    ccresap@gci.com,rmarcil@gci.com
+
+  emailEnabled:
+    yes
+    
+
+Get jobs data:
+  select * from filexfer2.jobs where runPolicy!='never';
+
 
 
 Links
