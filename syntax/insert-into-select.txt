@@ -36,6 +36,29 @@ Copy all columns from one table to another table:
 Need to get list of jobs that do not have a monitor already.
   select idJob from monitors;
 
+Get list of jobIds that do not have a monitor:
+  select distinct jobs.idJob from filexfer2.jobs, filexfer2.monitors
+  where filexfer2.jobs.idJob!=filexfer2.monitors.idJob;
+
+This query works (NOTE: select in where clause):
+
+SELECT idJob FROM filexfer2.jobs   <=== The bomb per se.
+WHERE idJob IN
+  (select distinct jobs.idJob from filexfer2.jobs, filexfer2.monitors
+  where filexfer2.jobs.idJob!=filexfer2.monitors.idJob);
+
+Insert row in filexfer2.monitors for active jobs that
+do not have one.
+
+select * from filexfer2.monitors;
+
+Last is (July 24, 2018):
+  idMonitor:   434
+  idJob:       833
+  monitorName: StarSolutions MSC Usage - Sand Point - Export to Cycle30 - Data Latency
+
+select count(*) from filexfer2.monitors;
+  195	
 
 
 INSERT INTO filexfer2.monitors (
@@ -43,21 +66,43 @@ INSERT INTO filexfer2.monitors (
   monitorName,
   severity,
   sqlTemplate,
-  messageTemplete, enabled, emailSubjectTemplate,
-  emailMessageTemplate, emailRecipients,
+  messageTemplete,
+  enabled,
+  emailSubjectTemplate,
+  emailMessageTemplate,
+  emailRecipients,
   emailEnabled)
 VALUES
   ((SELECT idJob from filexfer2.jobs),
    (SELECT CONCAT(jobName," - Data Latency")),
    3,
-   "SELECT MAX( `dtTransferStart` ) < NOW() - INTERVAL 3 HOUR AS `result`, MAX( `dtTrans$
-   "Data latency detected. Last file transferred at [% lastxfer %].",
+   SELECT  MAX( `dtTransferStart` ) < NOW() - INTERVAL 3 HOUR AS `result`, MAX( `dtTransferStart` ) AS `lastXfer` 
+   FROM `filexfer2`.`logs` WHERE `idJob` =  [% monitor.idJob %],
    "no",
    (SELECT CONCAT(jobName," - Data Latency")),
    "Data latency detected. Last file transferred at [% lastxfer %].",
    "ccresap@gci.com,rmarcil@gci.com",
    "yes");
-WHERE idJob=196;
+WHERE idJob IN
+  (select distinct jobs.idJob from filexfer2.jobs, filexfer2.monitors
+  where filexfer2.jobs.idJob!=filexfer2.monitors.idJob);
+
+
+Work in progress:
+SELECT DISTINCT concat("INSERT INTO filexfer2.monitors (idJob,
+monitorName,severity,sqlTemplate,messageTemplate,enabled,emailSubjectTemplate,
+emailMessageTemplate,emailRecipients,emailEnabled) VALUES (",
+filexfer2.jobs.idJob,',','"',jobName," - Data Latency",'"',',',3,',','"',
+"SELECT MAX('dtTransferStart') < NOW() - INTERVAL 3 HOUR AS 'result',MAX('dtTransferStart') 
+AS 'lastXfer' FROM 'filexfer2'.'logs WHERE 'idJob' =  [% monitor.idJob %],no,",
+'(SELECT CONCAT(jobName," - Data Latency")),',
+'"Data latency detected. Last file transferred at [% lastxfer %].",',
+'"ccresap@gci.com,rmarcil@gci.com",',
+'"yes");'
+)
+from filexfer2.jobs, filexfer2.monitors
+where filexfer2.jobs.idJob!=filexfer2.monitors.idJob;
+
 
 
 INSERT INTO filexfer2.monitors (
